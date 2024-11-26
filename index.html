@@ -485,8 +485,8 @@
 
 
 
-  <section class="section">
-    <div class="container is-max-desktop">
+<section class="section">
+  <div class="container is-max-desktop">
       <h2 class="title is-3">Generative Video Enhancement</h2>
       <p>
       Our generative video enhancement pipeline successfully captures the realistic texture of bread in the torn area as shown on the right.
@@ -496,7 +496,7 @@
       <div style="display: flex; justify-content: space-between; gap: 20px;">
           <!-- Left video -->
           <div style="flex: 1; text-align: center;">
-              <video controls style="width: 100%; border: 1px solid #ccc;">
+              <video autoplay muted loop controls style="width: 100%; border: 1px solid #ccc;">
                   <source src=".\static\videos\physgs_bread.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
@@ -504,13 +504,16 @@
           </div>
           <!-- Right video -->
           <div style="flex: 1; text-align: center;">
-              <video controls style="width: 100%; border: 1px solid #ccc;">
+              <video autoplay muted loop controls style="width: 100%; border: 1px solid #ccc;">
                   <source src=".\static\videos\ours_bread.mp4" type="video/mp4">
                   Your browser does not support the video tag.
               </video>
               <p>w/ generative video enhancement</p>
           </div>
       </div>
+  </div>
+</section>
+
       <!--/ Matting. -->
 
 
