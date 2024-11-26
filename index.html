@@ -148,24 +148,29 @@
               <source src="./static/videos/ours_vase.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="item item-toy">
-            <video poster="" id="toy" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/ours_toy.mp4" type="video/mp4">
+          <div class="item item-tennis">
+            <video poster="" id="tennis" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/ours_tennis.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="item item-patrickstar">
-            <video poster="" id="patrickstar" autoplay controls muted loop playsinline height="100%">
+          <div class="item item-tennis">
+            <video poster="" id="tennis" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/ours_cake.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-diamond">
+            <video poster="" id="diamond" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/ours_diamond.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="item item-patrickstar">
-            <video poster="" id="patrickstar" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/ours_basketball.mp4" type="video/mp4">
+          <div class="item item-creme">
+            <video poster="" id="creme" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/ours_creme.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="item item-patrickstar">
-            <video poster="" id="patrickstar" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/ours_patrickstar.mp4" type="video/mp4">
+          <div class="item item-horse">
+            <video poster="" id="horse" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/ours_horse.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-chair">
@@ -230,7 +235,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
         <h2 class="title is-3">Comparison</h2>
         <p>
@@ -244,7 +249,6 @@
             We use ChatGPT-4 to generate the prompts for each image on possible dynamics for video generation.
         </p>
         <br>
-        <!-- Images section -->
         <figure class="image is-fullwidth">
             <img src=".\static\images\physmotioncomparison-1.png" alt="Comparison Image 1">
         </figure>
@@ -252,7 +256,237 @@
             <img src=".\static\images\physmotionsupcom-1.png" alt="Comparison Image 2">
         </figure>
     </div>
+  </section> -->
+  <section class="video-comparison-section">
+    <h2>Comparison</h2>
+    <p>
+      We compare PhysMotion with several open-sourced state-of-the-art image-to-video generation models: 
+      <a href="https://arxiv.org/abs/2311.04145" target="_blank">I2VGen-XL</a>, 
+      <a href="https://arxiv.org/abs/2408.06072" target="_blank">CogVideoX-5B</a>, 
+      <a href="https://github.com/THUDM/CogVideo" target="_blank">MotionI2V</a>, 
+      <a href="https://github.com/THUDM/CogVideo" target="_blank">DragAnything</a>, 
+      <a href="https://github.com/THUDM/CogVideo" target="_blank">Dynamicrafter</a>. 
+      The first three methods use text-based conditions, while the latter two use trajectory-based conditions to generate dynamics from a single image. 
+      We use ChatGPT-4 to generate the prompts for each image on possible dynamics for video generation.
+    </p>
+    <!-- Diamond Case -->
+    <h3>Diamond</h3>
+    <div class="video-container">
+        <div class="video-item emphasized">
+            <h4>Ours</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/ours_diamond.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>CogVideoX-5B</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/cogvideoX_diamond.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>Dynamicrafter</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/dynamicrafter_diamond.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>MotionI2V</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/motion_diamond.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>DragAnything</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/drag_diamond.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>I2VGen-XL</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/vgen_diamond.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Case X -->
+    <h3>Fox</h3>
+    <div class="video-container">
+        <div class="video-item emphasized">
+            <h4>Ours</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/ours_foxhead.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>CogVideoX-5B</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/cogvideoX_foxhead.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>Dynamicrafter</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/dynamicrafter_foxhead.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>MotionI2V</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/motion_foxhead.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>DragAnything</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/drag_foxhead.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>I2VGen-XL</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/vgen_foxhead.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Case Y -->
+    <h3>Tennis</h3>
+    <div class="video-container">
+        <div class="video-item emphasized">
+            <h4>Ours</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/ours_tennis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>CogVideoX-5B</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/cogvideoX_tennis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>Dynamicrafter</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/dynamicrafter_tennis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>MotionI2V</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/motion_tennis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>DragAnything</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/drag_tennis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h4>I2VGen-XL</h4>
+            <video controls autoplay muted loop>
+                <source src="./static/videos/vgen_tennis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    
 </section>
+<style>
+  .video-comparison-section {
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 1200px;
+  }
+  .video-comparison-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+  }
+  .video-comparison-section h3 {
+      text-align: left;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+  }
+  .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      justify-items: center;
+  }
+  .video-item {
+      text-align: center;
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .video-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .video-item h4 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: #555;
+  }
+  .video-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+  }
+
+  /* Emphasized style for "Ours" */
+  .video-item.emphasized {
+      border: 3px solid #4CAF50; /* Green border */
+      background-color: #e8f5e9; /* Light green background */
+      box-shadow: 0 4px 10px rgba(0, 128, 0, 0.3); /* Stronger shadow */
+      transform: scale(1.05); /* Slight enlargement */
+  }
+  .video-item.emphasized h4 {
+      color: #2e7d32; /* Dark green font */
+      font-weight: bold;
+      font-size: 1.3em;
+  }
+  .video-item.emphasized video {
+      border: 2px solid #4CAF50; /* Green border around video */
+  }
+</style>
+
+
+
+
+
+
 
   <section class="section">
     <div class="container is-max-desktop">
